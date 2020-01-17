@@ -4,16 +4,24 @@
 
 	let toggleButton = document.querySelector(".switch-text"),
 		myHeading = document.querySelector('h1'),
-		svgImg = document.querySelector("#badge");
+		//svgImg = document.querySelector("#badge");
+		allSVG = document.querySelectorAll(".svg");
 
 
-// this function should log the ID for each SVG 
+// this function should change the heading text 
 	function changeText () {
 		myHeading.textContent ="what is up? I am script!";
-		}
+	}
 
-		toggleButton.addEventListener("click", changeText);
-		svgImg.addEventListener("mouseover", logSVG);
+	function logSVG() {
+		console.log(this.id);
+	}
+		//things a user can do to make stuff happen on the page
+	toggleButton.addEventListener("click", changeText);
 
+	//svgImg.addEventListener("click", logSVG);
+	//svgImg2.addEventListener("click", logSVG);
+
+	allSVGs.forEach(iteam => iteam.addEventListener("click", logSVG));
 
 	})();
