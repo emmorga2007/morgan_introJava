@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
-.img-wrapper {display: inline-block; width: 30%;}
+.img-wrapper{
+	display: inline-block; 
+	width: 30%;
+	padding: 10px 15px;
+}
 
-.img-wrapper > img {width: 100%;}
+
+
+.img-wrapper > img{
+	width: 100%;
+}
+
+.black-background{
+	background-color: black;
+	}
+
+#beerGraphic:hover #Grain {fill: red;}
+#beerGrain:hover #Grain {fill: red;}
